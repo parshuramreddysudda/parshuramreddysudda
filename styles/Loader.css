@@ -1,0 +1,73 @@
+.loaderSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0c1b21;
+}
+.loader {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.loader span{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: rotate(calc(45deg * var(--i)));
+}
+
+.loader span::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg,#c7eeff,#03a9f4);
+    border-radius: 50%;
+    box-shadow: 0 0 30px #00bcd4;
+
+}
+.loader .span1 {
+  --i: 1;
+}
+.loader .span2 {
+  --i: 2;
+}
+.loader .span3 {
+  --i: 3;
+}
+.loader .span4 {
+  --i: 4;
+}
+.loader .span5 {
+  --i: 5;
+}
+.loader .span6 {
+  --i: 6;
+}
+.loader .span7 {
+  --i: 7;
+}
+.loader .span8 {
+  --i: 8;
+}
+.loader .jpan1 {
+  --j: 0;
+}
+.loader .jpan2 {
+  --j: 1;
+}
+.loader .jpan3 {
+  --j: 2;
+}
+.loader .jpan4 {
+  --j: 3;
+}
+.loader .jpan5 {
+  --j: 4;
+}
