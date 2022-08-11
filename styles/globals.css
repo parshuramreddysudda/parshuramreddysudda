@@ -9,6 +9,43 @@
     box-sizing: border-box;
   }
 
+
+
+  /* Progress bar css */
+
+  #scrollpath {
+    position: fixed;
+    @apply top-0 right-0 w-[10px];
+    background: rgba(255, 255, 255, 0, 0.05);
+  }
+  #progressbar {
+    @apply fixed top-0 right-0 w-[10px] h-[50%];
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: scrollbarAnimate 5s linear infinite;
+  }
+  #progressbar:before,
+  #progressbar:after {
+    content: "";
+    @apply absolute top-0 left-0 w-[100%];
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter:blur(10px);
+  }
+  #progressbar:after{
+         filter:blur(30px);
+  }
+  ::-webkit-scrollbar{
+    width:0;
+  }
+  @keyframes scrollbarAnimate {
+    0%,
+    100% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
   /* Loader CSS */
   .loaderSection {
     display: flex;
@@ -21,7 +58,7 @@
     position: relative;
     width: 250px;
     height: 250px;
-    filter:url(#gooey)
+    filter: url(#gooey);
   }
   .loader span {
     position: absolute;
@@ -45,18 +82,17 @@
     box-shadow: 0 0 30px #00bcd4;
   }
 
-  .loaderSection .rotate{
+  .loaderSection .rotate {
     animation: animate 2s ease-in-out infinite;
-    animation-delay: calc(-.2s*var(--j));
+    animation-delay: calc(-0.2s * var(--j));
   }
   @keyframes animate {
-    0%{
-        transform:rotate(0deg);
+    0% {
+      transform: rotate(0deg);
     }
-    100%{
-        transform:rotate(360deg);
+    100% {
+      transform: rotate(360deg);
     }
-    
   }
   .loader .span1 {
     --i: 1;
