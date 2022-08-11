@@ -2,6 +2,7 @@ import React from 'react';
 import Loader from './../components/Loader'
 import Hero from './Hero';
 import Clones from '../components/Clones'
+import Navbar from './../components/Navbar';
 
 export default function index() {
   var calculateProgress = (params) => {
@@ -19,6 +20,7 @@ export default function index() {
   return (
     <>
       {/* <Loader/> */}
+      <Navbar/>
       <Hero />
       <Clones />
 
