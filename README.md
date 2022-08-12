@@ -1,2 +1,2 @@
 # Portfolio
-http://parshuramreddysudda.vercel.app/
+https://parshuramsudda.netlify.app/
