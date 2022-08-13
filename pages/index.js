@@ -3,6 +3,7 @@ import Loader from './../components/Loader'
 import Hero from './Hero';
 import Clones from '../components/Clones'
 import Navbar from './../components/Navbar';
+import TechStack from './../components/TechStack';
 
 export default function index() {
   var calculateProgress = (params) => {
@@ -20,14 +21,14 @@ export default function index() {
   return (
     <>
       {/* <Loader/> */}
-      <Navbar/>
-      <Hero />
-      <Clones />
+      {/* <Navbar/> */}
+      {/* <Hero /> */}
+      <Clones/>
+      {/* <TechStack /> */}
 
       <div id="progressbar"></div>
       <div id="scrollpath"></div>
       <div id="percent"></div>
-      <h2>Hellos</h2>
       {calculateProgress()}
     </>
   );

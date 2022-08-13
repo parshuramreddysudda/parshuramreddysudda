@@ -1,16 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('Navbar.css');
+@import url('navbar.css');
+@import url('loader.css');
+@import url('techStack.css');
+@import url('clones.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @layer components {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif!important;
   }
 
-
+body{
+  min-height:2000px;
+   background: #111;
+}
 
   /* Progress bar css */
 
@@ -20,7 +28,7 @@
     background: rgba(255, 255, 255, 0, 0.05);
   }
   #progressbar {
-    @apply fixed top-0 right-0 w-[10px] h-[50%];
+    @apply fixed top-0 right-0 w-[10px] h-[0%];
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: scrollbarAnimate 5s linear infinite;
   }
@@ -45,93 +53,5 @@
     50% {
       filter: hue-rotate(360deg);
     }
-  }
-
-  /* Loader CSS */
-  .loaderSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #0c1b21;
-  }
-  .loader {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    filter: url(#gooey);
-  }
-  .loader span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    transform: rotate(calc(45deg * var(--i)));
-  }
-
-  .loaderSection span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(50% - 20px);
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(45deg, #c7eeff, #03a9f4);
-    border-radius: 50%;
-    box-shadow: 0 0 30px #00bcd4;
-  }
-
-  .loaderSection .rotate {
-    animation: animate 2s ease-in-out infinite;
-    animation-delay: calc(-0.2s * var(--j));
-  }
-  @keyframes animate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .loader .span1 {
-    --i: 1;
-  }
-  .loader .span2 {
-    --i: 2;
-  }
-  .loader .span3 {
-    --i: 3;
-  }
-  .loader .span4 {
-    --i: 4;
-  }
-  .loader .span5 {
-    --i: 5;
-  }
-  .loader .span6 {
-    --i: 6;
-  }
-  .loader .span7 {
-    --i: 7;
-  }
-  .loader .span8 {
-    --i: 8;
-  }
-  .loader .jpan1 {
-    --j: 0;
-  }
-  .loader .jpan2 {
-    --j: 1;
-  }
-  .loader .jpan3 {
-    --j: 2;
-  }
-  .loader .jpan4 {
-    --j: 3;
-  }
-  .loader .jpan5 {
-    --j: 4;
   }
 }

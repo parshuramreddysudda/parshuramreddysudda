@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <div>
-            <header>
+            <header className="navbar">
                 <img src="gifs/BlogHeader_Motion.jpg" className="banner" alt="" />
                 <a href="#" className="logo"> Ram </a>
                 <div className="toggle"></div>
