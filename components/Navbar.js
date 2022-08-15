@@ -16,9 +16,9 @@ export default function Navbar() {
 
     return (
         <div>
-            <header className="navbar">
+            <header className="navbar shadow-md">
                 <img src="gifs/BlogHeader_Motion.jpg" className="banner" alt="" />
-                <a href="#" className="logo"> Ram </a>
+                <a href="#" className="logo"> <h2>R a m</h2> </a>
                 <div className="toggle"></div>
                 <nav>
                     <ul>
@@ -27,7 +27,6 @@ export default function Navbar() {
                         <li><a href="">Education</a></li>
                         <li><a href="">Services </a></li>
                         <li><a href="">Contact </a></li>
-                        <li><a href=""> Temp</a></li>
                     </ul>
                 </nav>
             </header>

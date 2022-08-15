@@ -9,7 +9,6 @@ export default function index() {
   var calculateProgress = (params) => {
     if (typeof window !== "undefined") {
       var progressbar = document.getElementById('progressbar');
-      var percent = document.getElementById('percent');
       var totalHeight = document.body.scrollHeight - window.innerHeight;
       window.onscroll = function () {
         var progress = (this.window.pageYOffset / totalHeight) * 100;
