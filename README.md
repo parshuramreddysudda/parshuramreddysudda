@@ -1,17 +1,18 @@
-<h4 align="left">👋 Hey there! I'm Parsharam, a passionate Full Stack Engineer on a journey to craft innovative software solutions. Currently pursuing my Master's in Computer Science 🎓, I thrive on solving complex challenges, from Java to ReactJS, while sipping coffee ☕ and exploring tech trends. Let's connect and code something amazing together! 🚀</h4>
+<h4 align="left">👋 Hey there! I'm Parshuram Reddy, a passionate Full Stack Engineer on a journey to craft innovative software solutions. Currently pursuing my Master's in Computer Science 🎓, I thrive on solving complex challenges, from Java to ReactJS, while sipping coffee ☕ and exploring tech trends. Let's connect and code something amazing together! 🚀</h4>
 
 ###
-
+<div style="margin:20px"></div>
 <div align="center">
 
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=parshuramreddysudda&&show_icons=true&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=react&locale=en&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://streak-stats.demolab.com?user=parshuramreddysudda&locale=en&mode=daily&theme=react&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=parshuramreddysudda&locale=en&hide_title=false&layout=compact&card_width=320&langs&theme=react&hide_border=true" height="152" alt="languages graph"  />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=parshuramreddysudda&&show_icons=true&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=react&locale=en&hide_border=true" height="110" alt="stats graph"  />
+  <img src="https://streak-stats.demolab.com?user=parshuramreddysudda&locale=en&mode=daily&theme=react&hide_border=false&border_radius=5" height="110" alt="streak graph"  />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=parshuramreddysudda&locale=en&hide_title=false&layout=compact&card_width=320&langs&theme=react&hide_border=true" height="110" alt="languages graph"  />
 </div>
+<div style="margin:20px"></div>
 
 ###
 
-<img align="right" height="150" src="https://avatars.githubusercontent.com/u/28673434?v=4" />
+<!-- <img align="right" height="150" src="https://avatars.githubusercontent.com/u/28673434?v=4" /> -->
 
 ###
 
@@ -56,17 +57,18 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" height="30" alt="jira logo"  />
 </div>
+<div style="margin:20px"></div>
 
 ###
 
 <div align="left">
   <a href="https://www.linkedin.com/in/parshuramreddy/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
   </a>
   <a href="https://www.instagram.com/parshuramr3ddy/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"  />
   </a>
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
 </div>
 
 ###
