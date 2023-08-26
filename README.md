@@ -59,6 +59,27 @@
 </div>
 <div style="margin:20px"></div>
 
+## Projects
+
+- **Halfways Company Website**
+  A responsive website for Halfways Company, showcasing their services and portfolio.
+   [Live Demo](https://www.halfways.in/)
+
+- **Instagram Clone**
+  A clone of the Instagram UI, built with React and Firebase authentication.
+  [Repo](https://github.com/parshuramreddysudda/Insta-Clone) | [Live Demo](https://insta-clone-seven.vercel.app/)
+
+- **React Dashboard**
+  An interactive dashboard created using React and Chart.js for data visualization.
+  [Repo](https://github.com/parshuramreddysudda/dashboard-react) | [Live Demo](https://dashboard-react-dun.vercel.app/)
+- **A Redesigned Website**
+I've recently redesigned a website using excellent Next.js designs and UI principles. Check out the new and improved version of [https://drbalachandra.vercel.app/](https://drbalachandra.vercel.app/) that I've worked on. The redesign aims to enhance user experience and showcase the potential of Next.js for creating sleek and responsive web applications.
+
+## Connect with Me
+
+Let's connect and collaborate! You can find me on 
+
+
 ###
 
 <div align="left">
@@ -66,7 +87,10 @@
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
   </a>
   <a href="https://www.instagram.com/parshuramr3ddy/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"  />
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram logo"  />
+  </a>
+   <a href="https://www.instagram.com/parshuramr3ddy/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Leetcode&logo=Leetcode&label=&color=ffa116&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Leetcode logo"  />
   </a>
   <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
 </div>
