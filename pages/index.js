@@ -21,8 +21,8 @@ export default function index() {
     <>
       {/* <Loader/> */}
       {/* <Navbar/> */}
-      {/* <Hero /> */}
-      <Clones/>
+      <Hero />
+      {/* <Clones/> */}
       {/* <TechStack /> */}
 
       <div id="progressbar"></div>

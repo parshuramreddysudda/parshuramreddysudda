@@ -47,7 +47,7 @@ header .logo {
   z-index: 1;
 }
 header.sticky .banner {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 header.sticky .logo {
   position: absolute;
@@ -107,9 +107,6 @@ nav ul li a :hover {
   }
   header.sticky .logo {
     left: 40px;
-  }
-  header.sticky .banner {
-    opacity: 0;
   }
   header.sticky .banner {
     opacity: 0;
