@@ -20,8 +20,8 @@ export default function index() {
   return (
     <>
       {/* <Loader/> */}
-      {/* <Navbar/> */}
-      <Hero />
+      <Navbar/>
+      {/* <Hero /> */}
       {/* <Clones/> */}
       {/* <TechStack /> */}
 
