@@ -155,7 +155,7 @@ nav ul li a :hover {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
   line-height: 0.7em;
   outline: none;
-  animation: navbarText 20s linear infinite;
+  animation: navbarText 5s linear infinite;
 }
 @keyframes navbarText
 {
