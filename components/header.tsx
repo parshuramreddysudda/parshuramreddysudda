@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -43,29 +44,38 @@ export default function Header() {
                 }}
               >
                 {link.name}
+
+                {link.name === activeSection && (
+                  <motion.span
+                    className="absolute inset-0 bg-gray-100 rounded-full -z-10 dark:bg-gray-800"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
+            
           ))}
-          {links.map((link)=>(
+{links.map((link)=>(
             <>
             
             {link.name === activeSection && (
-                <motion.span
-                  className="absolute inset-0 bg-gray-100 rounded-full -z-10 dark:bg-gray-800"
-                  layoutId="activeSection"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                >
-                  <p className="headerNav">
-                    <span className="relative inline-flex px-5 py-2 text-3xl font-bold text-gray-800 no-underline transition-all duration-500 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl" data-text={linkTexts[link.name]}></span>
+            
+                  <p className="absolute flex headerNav">
+                    <span className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 " data-text={linkTexts[link.name]}></span>
                   </p>
-                </motion.span>
+               
               )}
                 </>
           ))}
         </ul>
+        
       </nav>
+      
     </header>
   );
 }
