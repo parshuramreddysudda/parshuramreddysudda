@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        Made with 💛 by Aliva Priyadarshini | &copy; {new Date().getFullYear()}{" "}
-        Aliva Priyadarshini. All rights reserved.
+    <footer className="px-4 mb-10 text-center text-gray-500">
+      <small className="block mb-2 text-xs">
+        Made with 💛 by Ram| &copy; {new Date().getFullYear()}{" "}
+        Ram. All rights reserved.
       </small>
       {/* <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with

@@ -10,7 +10,7 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  tags
+  tags,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);

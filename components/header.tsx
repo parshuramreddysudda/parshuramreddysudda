@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import { links, linkTexts } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -23,7 +23,7 @@ export default function Header() {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="relative flex items-center justify-center h-3/4"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -43,20 +43,26 @@ export default function Header() {
                 }}
               >
                 {link.name}
-
-                {link.name === activeSection && (
-                  <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
-                    layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 380,
-                      damping: 30,
-                    }}
-                  ></motion.span>
-                )}
               </Link>
             </motion.li>
+          ))}
+          {links.map((link)=>(
+            <>
+            
+            {link.name === activeSection && (
+                <motion.span
+                  className="absolute inset-0 bg-gray-100 rounded-full -z-10 dark:bg-gray-800"
+                  layoutId="activeSection"
+                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                >
+                  <p className="headerNav">
+                    <span className="relative inline-flex px-5 py-2 text-3xl font-bold text-gray-800 no-underline transition-all duration-500 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl" data-text={linkTexts[link.name]}></span>
+                  </p>
+                </motion.span>
+              )}
+                </>
           ))}
         </ul>
       </nav>

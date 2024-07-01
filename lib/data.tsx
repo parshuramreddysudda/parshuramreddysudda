@@ -244,3 +244,13 @@ export const skills_icons = {
   faBroadcastTower,
   faChartLine,
 };
+
+
+export const linkTexts = {
+  Home: "intro?",
+  About: "who?",
+  Projects: "works?",
+  Skills: "skills",
+  Experience: "experience!",
+  Contact: "Email",
+};

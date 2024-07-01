@@ -43,7 +43,8 @@ export default function Skills() {
           custom={index}
           className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
         >
-          {skill.skill} <FontAwesomeIcon className="text-red-700" icon={IconComponent} />
+          {skill.skill} 
+          {/* <FontAwesomeIcon className="text-red-700" icon={IconComponent} /> */}
         </motion.li>
       );
     })}
