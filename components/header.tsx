@@ -64,7 +64,6 @@ export default function Header() {
             <>
             
             {link.name === activeSection && (
-            
                   <p className="absolute flex headerNav">
                     <span className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 " data-text={linkTexts[link.name]}></span>
                   </p>
