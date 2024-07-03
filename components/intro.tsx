@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Typewriter from "typewriter-effect";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -62,13 +63,53 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">
-          🚀 Hello World!, I'm [Your Name].
-        </span>{" "}
-        I'm a <span className="font-bold">software developer</span> and{" "}
-        <span className="font-bold">graduate student</span> at Michigan Technological University. I have 
-        <span className="font-bold">4 years</span> of full-time experience in building <span className="italic">innovative solutions</span>. Let's create
-        something extraordinary! 💻✨
+
+Hola !
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .changeDelay(50)
+              .changeDeleteSpeed(10)
+              .typeString("My Name is Parshuram Reddy Sudda")
+              .pauseFor(2000)
+              .deleteChars(21)
+              .typeString("Ramdy")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("May be Ram is Better, So ....")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString("I am Ram")
+              .start()
+          }}
+         options={{
+          delay:10,
+          cursor:" ",
+         }}
+        />
+             <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+            .pauseFor(10000)
+              .changeDelay(50)
+              .changeDeleteSpeed(10)
+              .typeString("What do I do for my Tea")
+              .pauseFor(500)
+              .deleteAll()
+              .typeString("I'm a software developer with over 4+ years of full-time experience.")
+              .pauseFor(500)
+              .deleteAll()
+              .typeString("So What do you call me!")
+              .pauseFor(500)
+              .deleteAll()
+              .typeString("A Full Stack Engineer ")
+              .start()
+          }}
+         options={{
+          delay:10,
+          cursor:null,
+         }}
+        />
       </motion.h1>
 
       <motion.div

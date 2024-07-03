@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -58,23 +57,21 @@ export default function Header() {
                 )}
               </Link>
             </motion.li>
-            
           ))}
-{links.map((link)=>(
+          {links.map((link) => (
             <>
-            
-            {link.name === activeSection && (
-                  <p className="absolute flex headerNav">
-                    <span className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 " data-text={linkTexts[link.name]}></span>
-                  </p>
-               
+              {link.name === activeSection && (
+                <p className="absolute flex headerNav">
+                  <span
+                    className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 "
+                    data-text={linkTexts[link.name]}
+                  ></span>
+                </p>
               )}
-                </>
+            </>
           ))}
         </ul>
-        
       </nav>
-      
     </header>
   );
 }

@@ -147,21 +147,21 @@ export const projectsData = [
     description:
       "Developed a geospatial data visualization application using ArcGIS API for JavaScript. Integrated external data sources, implemented dynamic mapping functionalities, and utilized spatial analysis techniques.",
     tags: ["ArcGIS", "Redux.js", "React.js"],
-    imageUrl: "https://via.placeholder.com/192",
+    imageUrl: require("../public/images/bg/project1.jpg"),
   },
   {
     title: "Instagram Clone",
     description:
       "Built an Instagram clone using Next.js, Tailwind CSS, and RecoilJs. Integrated Google Authenticator with NextAuth for enhanced security.",
     tags: ["Next.js", "Tailwind CSS", "RecoilJs"],
-    imageUrl: "https://via.placeholder.com/192",
+    imageUrl: "/images/projects/instagram.png",
   },
   {
     title: "Spotify Clone",
     description:
       "Created a Spotify clone using Next.js, Tailwind CSS, and Firebase. Added Google Authenticator for secure user authentication.",
     tags: ["Next.js", "Tailwind CSS", "Firebase"],
-    imageUrl: "https://via.placeholder.com/192",
+    imageUrl: "/images/projects/spotify.png",
   },
   {
     title: "Pronoxis (PHP Static Source Code Analyzer)",
@@ -182,7 +182,7 @@ export const projectsData = [
     description:
       "Built a dynamic web application using React and Redux, featuring Role-Based Access Control (RBAC), OpenAPI v3 integration, and interactive data visualization with Amcharts.",
     tags: ["React.js", "Redux.js", "RBAC", "OpenAPI v3", "Amcharts"],
-    imageUrl: "https://via.placeholder.com/192",
+    imageUrl: "/images/projects/React-Dashboard.gif",
   },
 ] as const;
 
