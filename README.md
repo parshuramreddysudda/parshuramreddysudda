@@ -1,4 +1,4 @@
-<h4 align="left">👋 Hey there! I'm Parshuram Reddy, a passionate Full Stack Engineer on a journey to craft innovative software solutions. Currently pursuing my Master's in Computer Science 🎓, I thrive on solving complex challenges, from Java to ReactJS, while sipping coffee ☕ and exploring tech trends. Let's connect and code something amazing together! 🚀</h4>
+<h4 align="left">👋 Hey there! I'm Ramdy, a passionate Full Stack Engineer on a journey to craft innovative software solutions. I thrive on solving complex challenges, from Java, and .Net to ReactJS, while sipping coffee ☕ and exploring tech trends. Let's connect and code something amazing together! 🚀</h4>
 
 ###
 <div style="margin:20px"></div>
