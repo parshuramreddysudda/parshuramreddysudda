@@ -9,7 +9,11 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import Typewriter from "typewriter-effect";
+import {
+  AnimatedSpan,
+  Terminal,
+  TypingAnimation,
+} from "../components/magicui/terminal";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -19,17 +23,14 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] pt-10" // Added pt-24 for spacing
     >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            transition={{ duration: 0.3, type: "spring", stiffness: 100 }} // Smoother animation
           >
             <Image
               src="https://via.placeholder.com/192" // Replace with your image URL
@@ -38,123 +39,91 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl" // Increased size
             />
           </motion.div>
 
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
+          {/* Removed the wave emoji, it's a bit cliché */}
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
-        initial={{ opacity: 0, y: 100 }}
+      <motion.div // Wrapped heading in motion.div for animation
+        className="mt-6" // Added margin top for spacing
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
+        <Terminal className="max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl"> {/* Centered terminal */}
+          <TypingAnimation>&gt; Hola!</TypingAnimation>
 
-Hola !
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .changeDelay(50)
-              .changeDeleteSpeed(10)
-              .typeString("My Name is Parshuram Reddy Sudda")
-              .pauseFor(2000)
-              .deleteChars(21)
-              .typeString("Ramdy")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("May be Ram is Better, So ....")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("I am Ram")
-              .start()
-          }}
-         options={{
-          delay:10,
-          cursor:" ",
-         }}
-        />
-             <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-            .pauseFor(10000)
-              .changeDelay(50)
-              .changeDeleteSpeed(10)
-              .typeString("What do I do for my Tea")
-              .pauseFor(500)
-              .deleteAll()
-              .typeString("I'm a software developer with over 4+ years of full-time experience.")
-              .pauseFor(500)
-              .deleteAll()
-              .typeString("So What do you call me!")
-              .pauseFor(500)
-              .deleteAll()
-              .typeString("A Full Stack Engineer ")
-              .start()
-          }}
-         options={{
-          delay:10,
-          cursor:null,
-         }}
-        />
-      </motion.h1>
+          <AnimatedSpan delay={1000} className="text-green-500">
+            <span>✔ I'm Ramdy, a Full Stack Engineer with 4+ years of experience.</span>
+          </AnimatedSpan>
+
+          <AnimatedSpan delay={2000} className="text-green-500">
+            <span>✔ I build robust and scalable web applications.</span>
+          </AnimatedSpan>
+
+          <AnimatedSpan delay={3000} className="text-green-500">
+            <span>✔ My expertise includes .NET, React, and more.</span>
+          </AnimatedSpan>
+
+          <AnimatedSpan delay={4000} className="text-green-500">
+            <span>✔ Currently, I'm contributing to the CareerOneStop project.</span>
+          </AnimatedSpan>
+
+          <AnimatedSpan delay={5000} className="text-green-500">
+            <span>✔ Previously, I honed my skills at Mastercard.</span>
+          </AnimatedSpan>
+
+          <AnimatedSpan delay={6000} className="text-green-500">
+            <span>✔ Let's connect and discuss your project!</span>
+          </AnimatedSpan>
+        </Terminal>
+      </motion.div>
+
 
       <motion.div
-        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
-        initial={{ opacity: 0, y: 100 }}
+        className="flex flex-col items-center justify-center gap-4 px-4 mt-10 text-lg font-medium sm:flex-row" // Increased margin-top
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full px-7 hover:bg-gray-950 focus:scale-105 hover:scale-105 active:scale-100" // Adjusted scale
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
+          Contact me <BsArrowRight className="opacity-70 group-hover:translate-x-1" />
         </Link>
 
         <a
-          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
+          className="flex items-center gap-2 py-3 transition bg-white rounded-full px-7 hover:scale-105 focus:scale-105 active:scale-100 borderBlack dark:bg-white/10" // Adjusted scale
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
-          <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
+          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com/in/[your-linkedin-id]"
+          className="flex items-center justify-center p-4 transition bg-white rounded-full hover:scale-105 focus:scale-105 active:scale-100 borderBlack dark:bg-white/10" // Adjusted scale, centered icon
+          href="https://www.linkedin.com/in/parshuramreddy/"
           target="_blank"
+          aria-label="LinkedIn" // Added aria-label for accessibility
         >
-          <BsLinkedin />
+          <BsLinkedin className="text-gray-700 hover:text-gray-950 dark:text-white/60 dark:hover:text-white" /> {/* Improved dark mode styling */}
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/[your-github-id]"
+          className="flex items-center justify-center p-4 transition bg-white rounded-full hover:scale-105 focus:scale-105 active:scale-100 borderBlack dark:bg-white/10" // Adjusted scale, centered icon
+          href="https://github.com/parshuramreddysudda"
           target="_blank"
+          aria-label="GitHub" // Added aria-label for accessibility
         >
-          <FaGithubSquare />
+          <FaGithubSquare className="text-gray-700 hover:text-gray-950 dark:text-white/60 dark:hover:text-white" /> {/* Improved dark mode styling */}
         </a>
       </motion.div>
     </section>

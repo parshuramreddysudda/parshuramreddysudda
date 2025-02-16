@@ -147,14 +147,7 @@ export const projectsData = [
     description:
       "Developed a geospatial data visualization application using ArcGIS API for JavaScript. Integrated external data sources, implemented dynamic mapping functionalities, and utilized spatial analysis techniques.",
     tags: ["ArcGIS", "Redux.js", "React.js"],
-    imageUrl: require("../public/images/bg/project1.jpg"),
-  },
-  {
-    title: "Instagram Clone",
-    description:
-      "Built an Instagram clone using Next.js, Tailwind CSS, and RecoilJs. Integrated Google Authenticator with NextAuth for enhanced security.",
-    tags: ["Next.js", "Tailwind CSS", "RecoilJs"],
-    imageUrl: "/images/projects/instagram.png",
+    imageUrl: require("../public/images/projects/kttp.jpeg"),
   },
   {
     title: "Spotify Clone",
@@ -168,14 +161,7 @@ export const projectsData = [
     description:
       "Developed a PHP static source code analyzer to scan for 13 types of security attacks, enhancing code security and reliability.",
     tags: ["PHP", "Security Analysis"],
-    imageUrl: "https://via.placeholder.com/192",
-  },
-  {
-    title: "Departmental Website For Engineering College",
-    description:
-      "Created a comprehensive website for an engineering college to manage student attendance and academic records.",
-    tags: ["Web Development", "Student Management"],
-    imageUrl: "https://via.placeholder.com/192",
+    imageUrl: "/images/projects/pronoxis.png",
   },
   {
     title: "React + Redux Web Application with RBAC, OpenAPI v3, and Amcharts Integration",
