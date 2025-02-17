@@ -21,10 +21,10 @@ export default function Header() {
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-          {links.map((link) => (
+          {links.map((link) => ( // Removed index, using link.name as key
             <motion.li
               className="relative flex items-center justify-center h-3/4"
-              key={link.hash}
+              key={link.name} // Unique key here!
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
@@ -58,19 +58,18 @@ export default function Header() {
               </Link>
             </motion.li>
           ))}
-          {links.map((link) => (
-            <>
-              {link.name === activeSection && (
-                <p className="absolute flex headerNav">
-                  <span
-                    className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 "
-                    data-text={linkTexts[link.name]}
-                  ></span>
-                </p>
-              )}
-            </>
-          ))}
+
+          {/*  REMOVED the duplicate map and moved the p tag inside the first map */}
+
         </ul>
+        {links.find(link => link.name === activeSection) && ( //moved this outside the ul element
+          <p className="absolute flex headerNav">
+            <span
+              className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 "
+              data-text={linkTexts[activeSection]}
+            ></span>
+          </p>
+        )}
       </nav>
     </header>
   );

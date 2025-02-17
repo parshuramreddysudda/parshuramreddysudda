@@ -4,13 +4,27 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useForm } from '@formspree/react';
+import SubmitBtn from "./submit-btn";
+import { stat } from "fs";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [state, handleSubmit] = useForm("xnqlorbo");
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await handleSubmit(e);
+// console.log(" Form state is ",state)
+    if (state.succeeded) {
+      toast.success("Email sent successfully! 🚀");
+      // Optionally reset the form after successful submission
+      e.target.reset(); // This will reset the form fields
+    } else if (state.errors) {
+      toast.error("Something went wrong");
+    }
+  };
   return (
     <motion.section
       id="contact"
@@ -31,29 +45,20 @@ export default function Contact() {
     >
       <SectionHeading>Contact me ✉️</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Feel free to reach out to me directly at{" "}
-        <a className="underline" href="mailto:alivamallick9@gmail.com">
-          alivamallick9@gmail.com
+        <a className="underline" href="mailto:parshuramsudda@gmail.com">
+        parshuramsudda@gmail.com
         </a>{" "}
         or simply use the form below.
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully! 🚀");
-        }}
+        className="flex flex-col mt-10 dark:text-black"
+        onSubmit={onSubmit} // Use the onSubmit handler
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="px-4 transition-all rounded-lg h-14 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -61,13 +66,13 @@ export default function Contact() {
           placeholder="Your email 📧"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="p-4 my-3 transition-all rounded-lg h-52 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           name="message"
           placeholder="Your message ✏️"
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+         <SubmitBtn submitting={state.submitting} /> 
       </form>
     </motion.section>
   );

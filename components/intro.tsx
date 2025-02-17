@@ -53,8 +53,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <Terminal className="max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl"> {/* Centered terminal */}
-          <TypingAnimation>&gt; Hola!</TypingAnimation>
+        <Terminal className="max-w-sm mx-auto bg-black sm:max-w-md md:max-w-lg lg:max-w-xl dark:bg-background">
+          <TypingAnimation className="text-white">&gt; Hola!</TypingAnimation>
 
           <AnimatedSpan delay={1000} className="text-green-500">
             <span>✔ I'm Ramdy, a Full Stack Engineer with 4+ years of experience.</span>

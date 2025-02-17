@@ -1,11 +1,14 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaChartBar, FaCogs, FaCss3Alt, FaHtml5, FaJs, FaLinux, FaReact } from "react-icons/fa";
-import { SiCodesandbox, SiFreelancer, SiNextdotjs, SiRedux, SiReduxsaga } from "react-icons/si";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import {
+  FaChartBar,
+  FaCogs,
+  FaReact,
+} from "react-icons/fa";
+import {
+  SiDotnet,
+  SiFreelancer,
+  SiMastercard,
+} from "react-icons/si";
 import {
   faHtml5,
   faCss3Alt,
@@ -16,10 +19,23 @@ import {
   faJenkins,
   faBootstrap,
   faLinux,
-} from '@fortawesome/free-brands-svg-icons';
-import { faBroadcastTower, faChartLine, faDatabase, faExchangeAlt, faFileAlt, faFileCode, faFire, faLeaf, faLock, faMap, faSatellite, faTerminal, faTools } from "@fortawesome/free-solid-svg-icons";
-import { BsFillPersonFill, BsTerminal } from "react-icons/bs";
-
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faChartLine,
+  faDatabase,
+  faExchangeAlt,
+  faFileAlt,
+  faFileCode,
+  faFire,
+  faLeaf,
+  faLock,
+  faMap,
+  faSatellite,
+  faTerminal,
+  faTools,
+} from "@fortawesome/free-solid-svg-icons";
+import {BsTerminal } from "react-icons/bs";
 
 export const links = [
   {
@@ -58,21 +74,57 @@ type Experience = {
 
 export const experiencesData: Experience[] = [
   {
+    title: ".NET Full Stack Engineer",
+    company: "Xpand Corporation",
+    description: (
+      <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
+        <li className="mb-2">
+          <span className="mr-2">🚀</span> Client: Contributed to the
+          CareerOneStop project (U.S. government initiative).
+        </li>
+        <li className="mb-2">
+          <span className="mr-2">💻</span> Led migration to a React-based
+          architecture, using Tailwind CSS and Redux, significantly improving
+          website performance.
+        </li>
+        <li className="mb-2">
+          <span className="mr-2">🛡️</span> Improved microservice resilience by
+          implementing Polly and Microsoft Resilience frameworks (circuit
+          breaker, retry, fallback patterns).
+        </li>
+        <li className="mb-2">
+          <span className="mr-2">✅</span> Achieved 90% test coverage for
+          microservices through comprehensive unit and integration testing.
+        </li>
+        <li className="mb-2">
+          <span className="mr-2">☁️</span> Deployed applications to Azure,
+          configuring CI/CD pipelines for seamless integration and delivery.
+        </li>
+      </ul>
+    ),
+    icon: React.createElement(SiDotnet),
+    date: "Jul 2024 - Present",
+  },
+  {
     title: "Linux Engineer",
     company: "Michigan Technological University",
     description: (
       <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
         <li className="mb-2">
-          🖥️ Provided hardware and software support, addressing Linux-based issues for faculty, staff, and students.
+          🖥️ Provided hardware and software support, addressing Linux-based
+          issues for faculty, staff, and students.
         </li>
         <li className="mb-2">
-          🛠️ Orchestrated deployment and testing of applications in diverse Linux environments.
+          🛠️ Orchestrated deployment and testing of applications in diverse
+          Linux environments.
         </li>
         <li className="mb-2">
-          🔍 Implemented new Linux systems, ensuring optimal configuration and security practices.
+          🔍 Implemented new Linux systems, ensuring optimal configuration and
+          security practices.
         </li>
         <li className="mb-2">
-          📝 Documented precise installation instructions and facilitated knowledge sharing.
+          📝 Documented precise installation instructions and facilitated
+          knowledge sharing.
         </li>
       </ul>
     ),
@@ -81,24 +133,27 @@ export const experiencesData: Experience[] = [
   },
   {
     title: "Full Stack Developer",
-    company: "Wipro Limited",
+    company: "Mastercard",
     description: (
       <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
         <li className="mb-2">
-          🌐 Developed interactive UI web pages using React, HTML5, CSS, and JavaScript for MasterCard's Rewards Services.
+          🌐 Developed interactive UI web pages using React, HTML5, CSS, and
+          JavaScript for MasterCard's Rewards Services.
         </li>
         <li className="mb-2">
-          🔄 Implemented Spring Framework with MVC architecture, integrating JSP for backend development.
+          🔄 Implemented Spring Framework with MVC architecture, integrating JSP
+          for backend development.
         </li>
         <li className="mb-2">
           🛠️ Managed CI/CD integration, ensuring smooth deployment processes.
         </li>
         <li className="mb-2">
-          📊 Utilized Splunk and Sonar for monitoring, debugging, and enhancing application security.
+          📊 Utilized Splunk and Sonar for monitoring, debugging, and enhancing
+          application security.
         </li>
       </ul>
     ),
-    icon: React.createElement(SiCodesandbox),
+    icon: React.createElement(SiMastercard),
     date: "Dec 2020 - Aug 2022",
   },
   {
@@ -107,37 +162,25 @@ export const experiencesData: Experience[] = [
     description: (
       <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
         <li className="mb-2">
-          🚀 Led frontend development using ReactJS, Google Maps API, and Twilio API for a dynamic company website.
+          🚀 Led frontend development using ReactJS, Google Maps API, and Twilio
+          API for a dynamic company website.
         </li>
         <li className="mb-2">
-          🌍 Integrated Vercel for automated deployments and real-time log monitoring.
+          🌍 Integrated Vercel for automated deployments and real-time log
+          monitoring.
         </li>
         <li className="mb-2">
-          📈 Enhanced user engagement with rich animations and responsive design principles.
+          📈 Enhanced user engagement with rich animations and responsive design
+          principles.
         </li>
         <li className="mb-2">
-          🔍 Collaborated across teams, optimizing project progress and efficiency.
-        </li>
-      </ul>
-    ),
-    icon: React.createElement(BsFillPersonFill),
-    date: "Jul 2019 - Dec 2020",
-  },
-  {
-    title: "Freelance Web Developer",
-    company: "Aftertutor",
-    description: (
-      <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
-        <li className="mb-2">
-          🎨 Developed HTML pages with animations and minimized code for aesthetic designs.
-        </li>
-        <li className="mb-2">
-          🕒 Managed project timelines and client relations, delivering projects on schedule.
+          🔍 Collaborated across teams, optimizing project progress and
+          efficiency.
         </li>
       </ul>
     ),
     icon: React.createElement(SiFreelancer),
-    date: "Mar 2018 - Jun 2019",
+    date: "Jul 2019 - Dec 2020",
   },
 ];
 
@@ -164,14 +207,14 @@ export const projectsData = [
     imageUrl: "/images/projects/pronoxis.png",
   },
   {
-    title: "React + Redux Web Application with RBAC, OpenAPI v3, and Amcharts Integration",
+    title:
+      "React + Redux Web Application with RBAC, OpenAPI v3, and Amcharts Integration",
     description:
       "Built a dynamic web application using React and Redux, featuring Role-Based Access Control (RBAC), OpenAPI v3 integration, and interactive data visualization with Amcharts.",
     tags: ["React.js", "Redux.js", "RBAC", "OpenAPI v3", "Amcharts"],
     imageUrl: "/images/projects/React-Dashboard.gif",
   },
 ] as const;
-
 
 export const skillsData = [
   { skill: "HTML", icon: "faHtml5" },
@@ -202,7 +245,6 @@ export const skillsData = [
   { skill: "Splunk", icon: "faChartLine" },
 ] as const;
 
-
 export const skills_icons = {
   faHtml5,
   faCss3Alt,
@@ -230,7 +272,6 @@ export const skills_icons = {
   faBroadcastTower,
   faChartLine,
 };
-
 
 export const linkTexts = {
   Home: "intro?",

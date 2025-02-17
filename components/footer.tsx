@@ -20,10 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="px-4 mb-10 text-center text-gray-500">
-      <small className="block mb-2 text-xs">
-        Made with 💛 by Ram| &copy; {new Date().getFullYear()} Ram. All rights
-        reserved.
-      </small>
+     
       <div className="flex items-center justify-center social-links">
 
         <div
@@ -117,6 +114,10 @@ export default function Footer() {
           </span>
         </div>
       </div>
+      <small className="block mt-5 mb-2 text-xs">
+        Made with 💛 by Ram| &copy; {new Date().getFullYear()} Ram. All rights
+        reserved.
+      </small>
     </footer>
   );
 }
