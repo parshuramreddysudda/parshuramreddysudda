@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import portfolio from '../public/images/bg/profile.png'
 import {
   AnimatedSpan,
   Terminal,
@@ -23,29 +24,45 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] pt-10" // Added pt-24 for spacing
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] pt-10" 
     >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, type: "spring", stiffness: 100 }} // Smoother animation
+            transition={{ duration: 0.3, type: "spring", stiffness: 100 }} 
           >
             <Image
-              src="https://via.placeholder.com/192" // Replace with your image URL
+              src={portfolio.src} 
               alt="Your Name portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl" // Increased size
+              className="h-48 w-48 rounded-full object-contain border-[0.35rem] dark:border-white shadow-xl"
             />
           </motion.div>
-
-          {/* Removed the wave emoji, it's a bit cliché */}
         </div>
       </div>
+
+      <motion.h1 // Changed to h1 for SEO and hierarchy
+        className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl dark:text-white"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Hello, I'm Parshuram Reddy.
+      </motion.h1>
+
+      <motion.p  // Added a paragraph for the subtitle
+        className="mt-4 text-lg font-medium text-gray-500 dark:text-gray-400"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        A Software Engineer with 4+ years of experience in Full Stack Development.
+      </motion.p>
 
       <motion.div // Wrapped heading in motion.div for animation
         className="mt-6" // Added margin top for spacing
@@ -57,7 +74,7 @@ export default function Intro() {
           <TypingAnimation className="text-white">&gt; Hola!</TypingAnimation>
 
           <AnimatedSpan delay={1000} className="text-green-500">
-            <span>✔ I'm Ramdy, a Full Stack Engineer with 4+ years of experience.</span>
+            <span>✔ I'm Ram, a Full Stack Engineer with 4+ years of experience.</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={2000} className="text-green-500">

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './social_icons.css';
 
 html {
   --line-color: #e5e7eb;
@@ -61,7 +60,8 @@ html.dark {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  /* background: rgba(255, 255, 255, 0.08); */
+  background: lavender;
   animation: animate 25s linear infinite;
   bottom: -100px;
 }

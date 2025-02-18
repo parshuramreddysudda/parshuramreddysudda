@@ -7,6 +7,9 @@ import {
 import {
   SiDotnet,
   SiFreelancer,
+  SiGooglehome,
+  SiGreenhouse,
+  SiHilton,
   SiMastercard,
 } from "react-icons/si";
 import {
@@ -37,6 +40,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {BsTerminal } from "react-icons/bs";
 
+import { SiGithub, SiGmail, SiHackerrank, SiLeetcode, SiLinkedin } from "react-icons/si";
 export const links = [
   {
     name: "Home",
@@ -281,3 +285,47 @@ export const linkTexts = {
   Experience: "experience!",
   Contact: "Email",
 };
+
+
+export const socialBarData ={
+  navbar: [
+    { href: "/", icon: SiGooglehome, label: "Home",navbar:true },
+    { href: "/blog", icon: SiHilton, label: "Blog",navbar:false },
+  ],
+  contact:{
+          social: {
+            GitHub: {
+              name: "GitHub",
+              url: "https://github.com/parshuramreddysudda",
+              icon: SiGithub,
+              navbar: true,
+            },
+            LinkedIn: {
+              name: "LinkedIn",
+              url: "https://www.linkedin.com/in/parshuramreddy/",
+              icon: SiLinkedin,
+      
+              navbar: true,
+            },
+            LeetCode: {
+              name: "Leetcode",
+              url: "https://leetcode.com/u/ParshuramSudda/",
+              icon: SiLeetcode,
+      
+              navbar: true,
+            },
+            HackerRank: {
+              name: "Hacker Rank",
+              url: "https://www.hackerrank.com/profile/parshuram_sudda",
+              icon: SiHackerrank,
+              navbar: true,
+            },
+            email: {
+              name: "Send Email",
+              url: "mailto:parshuram.sudda@gmail.com",
+              icon: SiGmail,
+              navbar: true,
+            },
+          },
+    }
+}

@@ -7,20 +7,22 @@ import Projects from "@/components/projects";
 import { Scroll } from "@/components/scroll-bar";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
-import { useScroll, useSpring, motion } from 'framer-motion';
+import SocialBar from "@/components/socialbar";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4 backdrop-blur-[0.2rem]">
-      <Scroll/>
-      <Intro />
-      <SectionDivider />
-      <About />
-      <Projects/>
-      <Skills />
-      <Experience />
-      <Contact />
-      
-    </main>
+    <>
+      <Scroll />
+      <main className="flex flex-col items-center px-4 backdrop-blur-[0.2rem]">
+        <Intro />
+        <SectionDivider />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+        <SocialBar />
+      </main>
+    </>
   );
 }
