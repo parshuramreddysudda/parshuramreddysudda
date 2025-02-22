@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ram | Personal Portfolio",
-  description: "Parshuram Reddy Sudda is a full-stack developer with 4+ years of experience.",
+  description:
+    "Parshuram Reddy Sudda is a full-stack developer with 4+ years of experience.",
 };
 
 export default function RootLayout({
@@ -22,28 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-        {/* Add your metadata and other head elements here */}
+        
       </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div className="fixed top-0 left-0 w-full h-full area bg-gradient-to-r from-blue-400 to-indigo-700 dark:bg-gray-900 ">
           <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            {[...Array(15)].map((_, index) => (
+              <li key={index}></li>
+            ))}
           </ul>
         </div>
 

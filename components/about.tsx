@@ -32,9 +32,9 @@ export default function About() {
         </span>
         . Additionally, I'm well-versed in TypeScript. My learning journey
         extends to the backend, where I'm currently diving into{" "}
-        <span className="font-medium">MongoDB, Express, and Node.js</span>.
-        Open to new challenges and learning opportunities, I am
-        currently seeking ways to contribute as a{" "}
+        <span className="font-medium">MongoDB, Express, and Node.js</span>. Open
+        to new challenges and learning opportunities, I am currently seeking
+        ways to contribute as a{" "}
         <span className="font-medium">full-time software developer</span>.
       </p>
 
