@@ -8,7 +8,7 @@ import { Scroll } from "@/components/scroll-bar";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import SocialBar from "@/components/socialbar";
-import Testimonial from "@/components/testimonials";
+// import Testimonial from "@/components/testimonials";
 
 export default function Home() {
   return (

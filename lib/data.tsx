@@ -146,7 +146,7 @@ export const experiencesData: Experience[] = [
       <ul className="mt-1 font-normal text-gray-700 list-disc dark:text-white/75">
         <li className="mb-2">
           🌐 Developed interactive UI web pages using React, HTML5, CSS, and
-          JavaScript for MasterCard's Rewards Services.
+          JavaScript for MasterCard&#39;s Rewards Services.
         </li>
         <li className="mb-2">
           🔄 Implemented Spring Framework with MVC architecture, integrating JSP

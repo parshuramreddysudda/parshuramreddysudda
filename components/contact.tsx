@@ -13,7 +13,7 @@ export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const [state, handleSubmit] = useForm("xnqlorbo");
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e:any) => {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {

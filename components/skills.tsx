@@ -53,12 +53,13 @@ const slugs = [
 ];
 
 const images = slugs.map((slug) => {
-  if (icons[slug]) {
-    return icons[slug].src; // Use local icon
+  if (slug in icons) {
+    return icons[slug as keyof typeof icons].src;
   } else {
     return `https://cdn.simpleicons.org/${slug}/${slug}`;
   }
 });
+
 
 export default function IconCloudDemo() {
     const { ref } = useSectionInView("Skills");

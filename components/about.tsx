@@ -30,8 +30,8 @@ export default function About() {
         <span className="font-medium">
           JavaScript, React, Next.js, Firebase, Tailwind CSS, and Rest APIs
         </span>
-        . Additionally, I'm well-versed in TypeScript. My learning journey
-        extends to the backend, where I'm currently diving into{" "}
+        . Additionally, I&#39;m well-versed in TypeScript. My learning journey
+        extends to the backend, where I&#39;m currently diving into{" "}
         <span className="font-medium">MongoDB, Express, and Node.js</span>. Open
         to new challenges and learning opportunities, I am currently seeking
         ways to contribute as a{" "}

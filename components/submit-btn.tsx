@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 
-export default function SubmitBtn({ submitting }) { // Receive the submitting prop
+export default function SubmitBtn({ submitting }:any) { // Receive the submitting prop
   return (
     <button
       type="submit"

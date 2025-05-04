@@ -52,7 +52,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Hello, I'm Parshuram Reddy.
+        Hello, I&#39;m Parshuram Reddy.
       </motion.h1>
 
       <motion.p  // Added a paragraph for the subtitle
@@ -80,7 +80,7 @@ export default function Intro() {
           </AnimatedSpan>
 
           <AnimatedSpan delay={3000} className="text-green-500">
-            <span>✔ Currently, I'm contributing to the CareerOneStop project.</span>
+            <span>✔ Currently, I&#39;m contributing to the CareerOneStop project.</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={3500} className="text-green-500">
@@ -88,7 +88,7 @@ export default function Intro() {
           </AnimatedSpan>
 
           <AnimatedSpan delay={4000} className="text-green-500">
-            <span>✔ Let's connect and discuss your project!</span>
+            <span>✔ Let&#39;s connect and discuss your project!</span>
           </AnimatedSpan>
         </Terminal>
       </motion.div>
@@ -113,7 +113,7 @@ export default function Intro() {
 
         <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full px-7 hover:scale-105 focus:scale-105 active:scale-100 borderBlack dark:bg-white/10" // Adjusted scale
-          href="/CV.pdf"
+          href="/ParsharamSuddaResume.pdf"
           download
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" />

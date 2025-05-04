@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import ModeToggle from "@/components/theme-switch";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,11 +24,26 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <head>
-        
+
+      <link rel="icon" href="/images/brand.png" sizes="any" />
+<Script id="next"
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=G-1GP5BB2Z9W`}>
+            </Script>
+            <Script id="next">
+                {
+                    `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-1GP5BB2Z9W');`
+                }
+            </Script>
       </head>
+
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
+  
         <div className="fixed top-0 left-0 w-full h-full area bg-gradient-to-r from-blue-400 to-indigo-700 dark:bg-gray-900 ">
           <ul className="circles">
             {[...Array(15)].map((_, index) => (
