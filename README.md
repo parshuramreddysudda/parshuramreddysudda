@@ -1,4 +1,5 @@
-# Aliva Priyadarshini - Portfolio Repository
+
+<h4 align="left">👋 Hey there! I'm Ramdy, a passionate Full Stack Engineer on a journey to craft innovative software solutions. I thrive on solving complex challenges, from Java, and .Net to ReactJS, while sipping coffee ☕ and exploring tech trends. Let's connect and code something amazing together! 🚀</h4>
 
 🚀 Welcome to the repository for my captivating portfolio!
 
@@ -41,3 +42,24 @@ Feel the magic as you explore the code that brings my portfolio to life! 🌟✨
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000)
 
 Happy coding! 🚀
+=======
+<div align="left">
+  <a href="https://www.linkedin.com/in/parshuramreddy/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  </a>
+  <a href="https://www.instagram.com/parshuramr3ddy/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram logo"  />
+  </a>
+   <a href="https://www.instagram.com/parshuramr3ddy/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Leetcode&logo=Leetcode&label=&color=ffa116&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Leetcode logo"  />
+  </a>
+  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
+</div>
+
+###
+
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/parshuramreddysudda/parshuramreddysudda/output/snake.svg" alt="Snake animation" />
+
+###
