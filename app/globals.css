@@ -213,11 +213,11 @@ html.dark {
   top: 50%;
   /* transform: translate(-50%,50%) rotate(-90deg);; */
   /* transform: translateY(-50%); */
-  transform: translate(-43vw, 29.5vh) rotate(-90deg);
+  transform: translate(-43vw, 33.5vh) rotate(-90deg);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4.5em;
+  font-size: 3.5em;
   color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   z-index: -1;

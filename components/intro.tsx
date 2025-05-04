@@ -35,7 +35,7 @@ export default function Intro() {
           >
             <Image
               src={portfolio.src} 
-              alt="Your Name portrait"
+              alt="Ram portrait"
               width="192"
               height="192"
               quality="95"
@@ -71,29 +71,23 @@ export default function Intro() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <Terminal className="max-w-sm mx-auto bg-black sm:max-w-md md:max-w-lg lg:max-w-xl dark:bg-background">
-          <TypingAnimation className="text-white">&gt; Hola!</TypingAnimation>
-
-          <AnimatedSpan delay={1000} className="text-green-500">
-            <span>✔ I'm Ram, a Full Stack Engineer with 4+ years of experience.</span>
-          </AnimatedSpan>
-
           <AnimatedSpan delay={2000} className="text-green-500">
             <span>✔ I build robust and scalable web applications.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={3000} className="text-green-500">
+          <AnimatedSpan delay={2500} className="text-green-500">
             <span>✔ My expertise includes .NET, React, and more.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={4000} className="text-green-500">
+          <AnimatedSpan delay={3000} className="text-green-500">
             <span>✔ Currently, I'm contributing to the CareerOneStop project.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={5000} className="text-green-500">
+          <AnimatedSpan delay={3500} className="text-green-500">
             <span>✔ Previously, I honed my skills at Mastercard.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={6000} className="text-green-500">
+          <AnimatedSpan delay={4000} className="text-green-500">
             <span>✔ Let's connect and discuss your project!</span>
           </AnimatedSpan>
         </Terminal>

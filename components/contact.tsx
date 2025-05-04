@@ -16,7 +16,6 @@ export default function Contact() {
   const onSubmit = async (e) => {
     e.preventDefault();
     await handleSubmit(e);
-// console.log(" Form state is ",state)
     if (state.succeeded) {
       toast.success("Email sent successfully! 🚀");
       // Optionally reset the form after successful submission

@@ -63,6 +63,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Testimonials",
+    hash: "#testimonials",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -278,12 +282,12 @@ export const skills_icons = {
 };
 
 export const linkTexts = {
-  Home: "intro?",
-  About: "who?",
-  Projects: "works?",
-  Skills: "skills",
-  Experience: "experience!",
-  Contact: "Email",
+  Home: "<Ram/>",
+  About: "Me",
+  Projects: "Creations",
+  Skills: "Abilities",
+  Experience: "Journey",
+  Contact: "Connect",
 };
 
 
@@ -320,7 +324,7 @@ export const socialBarData ={
               icon: SiHackerrank,
               navbar: true,
             },
-            email: {
+            Email: {
               name: "Send Email",
               url: "mailto:parshuram.sudda@gmail.com",
               icon: SiGmail,
@@ -329,3 +333,35 @@ export const socialBarData ={
           },
     }
 }
+
+
+export const testimonials = [
+  {
+    text: "Ram is a hardworking professional, approaches all his tasks with a positive attitude. Cheerful guy to work with, very understandable and collaborative in nature.",
+    image: "https://via.placeholder.com/100", // Replace with actual image URL if available
+    name: "Sasi Jeyarajan",
+    title: "Senior Software Engineer",
+    rating: 4.8,
+  },
+  {
+    text: "Parshuram joined our team as a fresher last year and picked up the pace very quickly. He is now our go-to guy for any brainstorming related tasks to explore ideas.",
+    image: "https://via.placeholder.com/100",
+    name: "Sanfer S",
+    title: "Full Stack Developer at Wipro",
+    rating: 4.9,
+  },
+  {
+    text: "It’s rare that you come across standout talent like Parshuram. If you’re looking for a talented Full Stack Developer, I’d highly recommend hiring Parshuram!",
+    image: "https://via.placeholder.com/100",
+    name: "Mohammed Munaff",
+    title: "Director at AT Digitals",
+    rating: 5.0,
+  },
+  {
+    text: "Parshuram is a gem of a person to work with. He always comes with original ideas and implements them in no time. He constantly updates his knowledge through courses and workshops.",
+    image: "SiLinkedin",
+    name: "Madhu Kalyan",
+    title: "Mobile Application Architect",
+    rating: 4.9,
+  },
+];

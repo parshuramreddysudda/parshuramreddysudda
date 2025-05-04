@@ -13,7 +13,7 @@ export interface DockProps extends VariantProps<typeof dockVariants> {
 }
 
 const DEFAULT_MAGNIFICATION = 60;
-const DEFAULT_DISTANCE = 140;
+const DEFAULT_DISTANCE = 100;
 
 const dockVariants = cva(
   "mx-auto w-max h-full p-2 flex items-end rounded-full border"

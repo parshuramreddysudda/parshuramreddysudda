@@ -1,24 +1,14 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Projects() {
-  const { ref, inView } = useInView({ threshold: 0.5 }); // Adjust threshold if needed
-  const { setActiveSection } = useActiveSectionContext();
-
-  // Update active section when this section comes into view
-  useEffect(() => {
-    if (inView) {
-      console.log("📌 Projects section is in view!");
-      setActiveSection("Projects");
-    }
-  }, [inView, setActiveSection]);
+  const { ref } = useSectionInView("Projects");
 
   return (
     <motion.section

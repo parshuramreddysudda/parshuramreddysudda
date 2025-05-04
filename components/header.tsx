@@ -12,14 +12,10 @@ export default function Header() {
   
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
-    useEffect(() => {
-      console.log(`🚀 Active section updated in Header: ${activeSection}`);
-    }, [activeSection]);
-
   return (
     <header className="z-[99] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-black border-x-2 border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-opacity-40 shadow-lg backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[44rem] sm:rounded-full transition-colors duration-300 dark:bg-gray-900/75 dark:border-gray-800/40 bg-white/80 border-gray-200/40 shadow-black/10 dark:shadow-white/10"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
@@ -66,7 +62,7 @@ export default function Header() {
 
           {linkTexts[activeSection] && (
             <motion.li
-              className="absolute flex headerNav"
+              className="absolute hidden headerNav sm:flex"
               key={activeSection}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -76,7 +72,7 @@ export default function Header() {
                 className="flex justify-center font-bold text-gray-800 no-underline transition-all duration-500 dark:text-gray-200"
                 data-text={linkTexts[activeSection]}
                 initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               ></motion.span>
             </motion.li>

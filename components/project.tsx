@@ -48,13 +48,14 @@ export default function Project({
           </ul>
         </div>
 
-        <Image
+       <div className="flex justify-center">
+       <Image
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
           width={100}
           height={100}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className=" max-w-md mx-auto absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -67,6 +68,7 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
+       </div>
       </section>
     </motion.div>
   );
