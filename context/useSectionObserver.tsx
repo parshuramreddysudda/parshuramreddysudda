@@ -2,9 +2,10 @@
 
 import { useEffect } from "react";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import type { SectionName } from "@/lib/types";
+import { links } from "@/lib/data";
 
-const SECTION_IDS: SectionName[] = ["Home", "About", "Projects", "Contact"]; // Adjust based on actual sections
+type SectionName = (typeof links)[number]["name"]
+const SECTION_IDS: SectionName[] =  links.map(link => link.name)
 
 export default function useSectionObserver() {
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
@@ -13,7 +14,7 @@ export default function useSectionObserver() {
     const observer = new IntersectionObserver(
       (entries) => {
         const visibleEntry = entries.find((entry) => entry.isIntersecting);
-        if (visibleEntry && Date.now() - timeOfLastClick > 1000) {
+        if (visibleEntry && Date.now() - timeOfLastClick > 500) {
           setActiveSection(visibleEntry.target.id as SectionName);
         }
       },

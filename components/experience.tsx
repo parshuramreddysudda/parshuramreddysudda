@@ -13,7 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { motion } from "framer-motion";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience",0.2);
   const { theme } = useTheme();
 
   return (

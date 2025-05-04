@@ -51,10 +51,6 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -63,9 +59,13 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Testimonials",
-    hash: "#testimonials",
+    name: "Projects",
+    hash: "#projects",
   },
+  // {
+  //   name: "Testimonials",
+  //   hash: "#testimonials",
+  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -284,9 +284,10 @@ export const skills_icons = {
 export const linkTexts = {
   Home: "<Ram/>",
   About: "Me",
-  Projects: "Creations",
   Skills: "Abilities",
   Experience: "Journey",
+  // Testimonials:"People Say",
+  Projects: "Creations",
   Contact: "Connect",
 };
 
